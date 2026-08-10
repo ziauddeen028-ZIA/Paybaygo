@@ -42,7 +42,7 @@ export default function ProductSection() {
     <section id="products" className="page-container py-16 lg:py-24">
       <div className="mx-auto flex max-w-6xl flex-col gap-8">
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#4169E1]">OUR PRODUCT</p>
+          <p className="text-xl font-bold uppercase tracking-[0.35em] text-[#4169E1]">OUR PRODUCT</p>
           <h2 className="mt-4 text-3xl font-extrabold leading-tight text-slate-900 sm:text-4xl">
             With us, you can expect a transparent and trustworthy partnership.
           </h2>
@@ -64,8 +64,8 @@ export default function ProductSection() {
                   />
                 </div>
                 <div className="space-y-4 p-5">
-                  <div className="flex items-center justify-between gap-3">
-                    <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#4169E1]/10 text-[#4169E1]">
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#EEF3FF] text-[#4169E1] transition duration-300 hover:scale-105">
                       <Icon className="h-6 w-6" />
                     </div>
                     {item.status ? (

@@ -7,7 +7,6 @@ const LINKS = [
   { label: "Our Vision", href: "#vision" },
   { label: "Our Products", href: "#products" },
   { label: "How PayBayGo Works", href: "#how-it-works" },
-  { label: "Partner With Us", href: "#partner" },
   { label: "About", href: "/about" },
   { label: "Contact Us", href: "#contact" },
 ];

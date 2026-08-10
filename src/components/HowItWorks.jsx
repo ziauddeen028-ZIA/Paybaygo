@@ -48,7 +48,7 @@ export default function HowItWorks() {
     <section id="how-it-works" className="relative py-20 sm:py-28">
       <div className="page-container">
         <div className="mx-auto max-w-4xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.32em] text-primary">HOW PAYBAYGO WORKS</p>
+          <p className="text-xl font-bold uppercase tracking-[0.32em] text-primary">HOW PAYBAYGO WORKS</p>
           <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">Parking Made Simple</h2>
           <p className="mx-auto mt-4 max-w-2xl text-base text-slate-600">
             From registration to finding parking and making secure digital payments, PayBayGo makes every step simple, seamless, and convenient.

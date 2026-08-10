@@ -28,7 +28,7 @@ export default function Vision() {
       <section id="vision" className="grid items-start gap-10 lg:grid-cols-2">
         <div className="order-2 lg:order-1 lg:pl-12">
           <div className="max-w-2xl">
-            <div className="text-sm font-semibold uppercase tracking-wide text-[#4169E1]">Our Vision</div>
+            <div className="text-xl font-bold uppercase tracking-wide text-[#4169E1]">Our Vision</div>
             <h1 className="mt-4 text-3xl font-extrabold leading-tight text-slate-900 sm:text-4xl">
               Building the Future of Smart Parking
             </h1>
