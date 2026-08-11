@@ -1,4 +1,8 @@
 import { HiOutlineSparkles, HiOutlineCreditCard, HiOutlineTruck, HiOutlineShieldCheck } from "react-icons/hi";
+import park from "../assets/park.png";
+import pass from "../assets/pass.png";
+import fleet from "../assets/fleet.png";
+import valet from "../assets/valet.png";
 
 const products = [
   {
@@ -6,7 +10,7 @@ const products = [
     description:
       "PayBayGo Park is a cutting-edge wallet-based platform revolutionizing the way parking payments are collected and managed. Designed to streamline urban mobility, PayBayGo offers an automated, secure, and user-friendly solution for parking fee collection.",
     image:
-      "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80",
+     park,
     icon: HiOutlineSparkles,
     status: null,
   },
@@ -15,7 +19,7 @@ const products = [
     description:
       "PayBayGo Pass is a subscription-based parking solution designed for car owners who value convenience, safety, and affordability. Whether you're commuting daily or planning long-term parking, our pass ensures you always have a secure spot waiting for you.",
     image:
-      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80",
+      pass,
     icon: HiOutlineCreditCard,
     status: null,
   },
@@ -23,7 +27,7 @@ const products = [
     title: "PayBayGo Fleet",
     description: "Coming Soon...",
     image:
-      "https://images.unsplash.com/photo-1517142089942-ba376ce32a2e?auto=format&fit=crop&w=900&q=80",
+      fleet,
     icon: HiOutlineTruck,
     status: "Coming Soon",
   },
@@ -31,7 +35,7 @@ const products = [
     title: "PayBayGo Valet",
     description: "Coming Soon...",
     image:
-      "https://images.unsplash.com/photo-1499492525486-3c2c48c9a6d5?auto=format&fit=crop&w=900&q=80",
+      valet,
     icon: HiOutlineShieldCheck,
     status: "Coming Soon",
   },

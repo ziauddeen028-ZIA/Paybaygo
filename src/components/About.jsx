@@ -1,4 +1,4 @@
-import aboutImg from "../assets/image.png";
+import aboutImg from "../assets/about.png";
 import { HiOutlineUser, HiOutlineUserGroup, HiOutlineCog, HiOutlineShieldCheck } from "react-icons/hi";
 
 export default function About({ showTeam = true }) {
@@ -48,10 +48,7 @@ export default function About({ showTeam = true }) {
                 through real-time insights, automated workflows, and frictionless user experiences.
               </p>
 
-              <p className="mt-4 text-base leading-relaxed text-slate-700">
-                Ready to experience PayBayGo?
-                Join the smart parking community across Bangalore & Chennai.
-              </p>
+
 
               {/* Feature cards */}
               <div className="mt-8 grid gap-4 sm:grid-cols-3">
@@ -162,6 +159,27 @@ export default function About({ showTeam = true }) {
                   </p>
                 </div>
               </article>
+            </div>
+            <div className="mt-8 flex flex-col gap-4 rounded-2xl border border-[#DCE6FF] bg-[#F7F9FF] p-5 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#4169E1]">
+                  Smart Parking Starts Here
+                </p>
+
+                <p className="mt-2 text-base leading-7 text-slate-700">
+                  Ready to experience PayBayGo? Join the smart parking community across
+                  Bangalore &amp; Chennai.
+                </p>
+              </div>
+
+              <a
+                href="https://play.google.com/store/apps/details?id=com.rimsolutions.paybaygo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex shrink-0 items-center justify-center rounded-full bg-[#4169E1] px-5 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#3158d8] hover:shadow-md"
+              >
+                Get the App ↗
+              </a>
             </div>
           </div>
         </section>

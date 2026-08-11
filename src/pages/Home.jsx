@@ -22,6 +22,7 @@ import About from "../components/About";
 import Vision from "./Vision";
 import ProductSection from "../components/ProductSection";
 import HowItWorks from "../components/HowItWorks";
+import logo from "../assets/LOGO.png";
 
 const initialContactState = {
   name: "",
@@ -190,7 +191,7 @@ export default function Home() {
 
               <div className="mt-8">
                 <a
-                  href="#partner"
+                  href="#contact"
                   className="inline-flex w-full items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition hover:bg-primary-dark"
                 >
                   List Your Space
@@ -216,7 +217,7 @@ export default function Home() {
 
               <div className="mt-8">
                 <a
-                  href="#partner"
+                  href="#contact"
                   className="inline-flex w-full items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition hover:bg-primary-dark"
                 >
                   Start Seamless Parking
@@ -410,8 +411,13 @@ export default function Home() {
           <div className="grid gap-10 xl:grid-cols-5">
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-xl font-semibold text-white">
-                <span className="grid h-10 w-10 place-items-center rounded-2xl bg-[#4169E1] text-white">PB</span>
-                <span>PayBayGo</span>
+                <a href="/" className="inline-flex items-center">
+                  <img
+                    src={logo}
+                    alt="PayBayGo"
+                    className="h-10 w-auto object-contain"
+                  />
+                </a>
               </div>
               <p className="max-w-sm text-sm leading-6 text-slate-300">
                 Smart, seamless and secure parking solutions for modern urban mobility.

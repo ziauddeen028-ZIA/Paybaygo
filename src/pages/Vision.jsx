@@ -1,20 +1,23 @@
-import heroImg from "../assets/image.png";
+import heroImg from "../assets/vision.png";
+import seamless from "../assets/seamless.png";
+import smart from "../assets/smart.png";
+import secure from "../assets/secure.png";
 
 const pillarCards = [
   {
-    src: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=900&q=80",
+    src: smart,
     alt: "Smart parking technology",
     title: "01 — SMART",
     description: "Intelligent technology that simplifies parking and operations.",
   },
   {
-    src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80",
+    src: seamless,
     alt: "Digital parking payment technology",
     title: "02 — SEAMLESS",
     description: "Frictionless digital experiences from entry to payment.",
   },
   {
-    src: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80",
+    src: secure,
     alt: "Secure urban mobility operations",
     title: "03 — SECURE",
     description: "Reliable and secure transactions users can trust.",
