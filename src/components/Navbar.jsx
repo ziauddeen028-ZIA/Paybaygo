@@ -67,9 +67,8 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-shadow duration-300 ${
-        scrolled ? "bg-white/95 shadow-[0_1px_0_0_theme(colors.pattern)] backdrop-blur" : "bg-white/80 backdrop-blur"
-      }`}
+      className={`sticky top-0 z-50 w-full transition-shadow duration-300 ${scrolled ? "bg-white/95 shadow-[0_1px_0_0_theme(colors.pattern)] backdrop-blur" : "bg-white/80 backdrop-blur"
+        }`}
     >
       <nav className="page-container flex h-18 items-center justify-between py-3">
         <a href="/" onClick={(e) => handleNavClick(e, "/")} className="flex items-center gap-2 font-display text-xl font-semibold tracking-tight text-ink">
@@ -96,8 +95,16 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+        <div className="hidden items-center gap-3 lg:flex">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.rimsolutions.paybaygo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full border border-primary px-5 py-2.5 text-sm font-semibold text-primary transition-all hover:bg-primary hover:text-white"
+          >
+            Get the App ↗
+          </a>
 
-        <div className="hidden lg:block">
           <a
             href="#partner"
             onClick={(e) => handleNavClick(e, "#partner")}
@@ -120,33 +127,52 @@ export default function Navbar() {
 
       {/* Mobile panel */}
       <div
-        className={`grid overflow-hidden bg-white transition-[grid-template-rows] duration-300 ease-out lg:hidden ${
-          open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
-        }`}
+        className={`lg:hidden overflow-hidden bg-white transition-all duration-300 ${open ? "max-h-[calc(100vh-72px)] opacity-100" : "max-h-0 opacity-0"
+          }`}
       >
-        <div className="min-h-0">
-          <ul className="page-container flex flex-col gap-1 border-t border-pattern py-4">
+        <div className="max-h-[calc(100vh-72px)] overflow-y-auto">
+          <ul className="page-container flex flex-col gap-1 border-t border-pattern py-4 pb-8">
+
             {LINKS.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link.href)}
-                  className="flex items-center gap-3 rounded-lg px-2 py-3 text-base font-medium text-ink transition-colors hover:bg-surface-blue hover:text-primary"
+                  className="flex items-center gap-3 rounded-lg px-2 py-4 text-base font-medium text-ink transition-colors hover:bg-surface-blue hover:text-primary"
                 >
-                  <span className="h-[2px] w-4 bg-primary/40" aria-hidden="true" />
+                  <span
+                    className="h-[2px] w-4 bg-primary/40"
+                    aria-hidden="true"
+                  />
+
                   {link.label}
                 </a>
               </li>
             ))}
-            <li className="pt-2">
+
+            {/* Get the App */}
+            <li className="mt-4">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.rimsolutions.paybaygo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex w-full items-center justify-center rounded-full border-2 border-primary px-5 py-3.5 text-base font-semibold text-primary transition-all hover:bg-primary hover:text-white"
+              >
+                Get the App ↗
+              </a>
+            </li>
+
+            {/* Partner With Us */}
+            <li className="mt-3">
               <a
                 href="#partner"
                 onClick={(e) => handleNavClick(e, "#partner")}
-                className="block rounded-full bg-primary px-5 py-3 text-center text-sm font-semibold text-white"
+                className="flex w-full items-center justify-center rounded-full bg-primary px-5 py-3.5 text-base font-semibold text-white shadow-sm shadow-primary/20 transition-all hover:bg-primary-dark"
               >
                 Partner With Us
               </a>
             </li>
+
           </ul>
         </div>
       </div>

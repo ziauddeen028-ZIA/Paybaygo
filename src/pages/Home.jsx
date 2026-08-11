@@ -86,7 +86,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <About />
+      <About showTeam={false} />
 
       <section id="reserve" className="page-container py-20 sm:py-24">
         <div className="mx-auto max-w-6xl">
@@ -284,6 +284,7 @@ export default function Home() {
                     <div>
                       <p className="text-sm uppercase tracking-[0.24em] text-slate-400">Email</p>
                       <p className="mt-1 text-lg font-semibold text-white">support@paybaygo.com</p>
+                      <p className="mt-1 text-lg font-semibold text-white">Onboarding.partners@paybaygo.com</p>
                     </div>
                   </div>
 
@@ -406,7 +407,7 @@ export default function Home() {
 
       <footer className="bg-[#0B1638] text-white">
         <div className="page-container border-b border-white/10 py-16">
-          <div className="grid gap-10 xl:grid-cols-4">
+          <div className="grid gap-10 xl:grid-cols-5">
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-xl font-semibold text-white">
                 <span className="grid h-10 w-10 place-items-center rounded-2xl bg-[#4169E1] text-white">PB</span>
@@ -428,6 +429,16 @@ export default function Home() {
             </div>
 
             <div>
+              <h3 className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-400">Policies</h3>
+              <ul className="mt-6 space-y-3 text-sm text-slate-300">
+                <li><a href="#" className="transition hover:text-white">Privacy Policy</a></li>
+                <li><a href="#" className="transition hover:text-white">Terms & Conditions</a></li>
+                <li><a href="#" className="transition hover:text-white">Refund Policy</a></li>
+                <li><a href="#" className="transition hover:text-white">Shipping & Delivery Policy</a></li>
+              </ul>
+            </div>
+
+            <div>
               <h3 className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-400">Quick Links</h3>
               <ul className="mt-6 space-y-3 text-sm text-slate-300">
                 <li><a href="/" className="transition hover:text-white">Home</a></li>
@@ -443,8 +454,9 @@ export default function Home() {
               <h3 className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-400">Contact</h3>
               <div className="mt-6 space-y-4 text-sm text-slate-300">
                 <p>support@paybaygo.com</p>
+                <p>Onboarding.partners@paybaygo.com</p>
                 <a
-                  href="https://wa.me/919071137979?text=Hi%20PayBayGo%2C%20I%20have%20an%20inquiry."
+                  href="https://wa.me/919071150404?text=Hi%20PayBayGo%2C%20I%20have%20an%20inquiry."
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#294bb8]"

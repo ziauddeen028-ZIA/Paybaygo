@@ -28,7 +28,7 @@ const products = [
     status: "Coming Soon",
   },
   {
-    title: "PayBayGo Vault",
+    title: "PayBayGo Valet",
     description: "Coming Soon...",
     image:
       "https://images.unsplash.com/photo-1499492525486-3c2c48c9a6d5?auto=format&fit=crop&w=900&q=80",

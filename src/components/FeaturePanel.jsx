@@ -6,7 +6,7 @@ import {
 
 function FeatureGroup({ title, subtitle, items = [], Icon }) {
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+    <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[#8ba3ec] hover:shadow-lg">
       {Icon ? (
         <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#EEF3FF] text-[#4169E1]">
           <Icon size={24} />
