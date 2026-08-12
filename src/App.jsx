@@ -4,6 +4,10 @@ import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import AboutPage from "./pages/About";
+import PrivacyPolicyPage from "./pages/PrivacyPolicy";
+import TermsAndConditionsPage from "./pages/TermsAndConditions";
+import PaymentPolicyPage from "./pages/PaymentPolicyPage";
+import CancellationPolicyPage from "./pages/CancellationPolicyPage";
 
 export default function App() {
   return (
@@ -13,6 +17,10 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditionsPage />} />
+        <Route path="/payment-policy" element={<PaymentPolicyPage />} />
+        <Route path="/parking-space-cancellation-policy" element={<CancellationPolicyPage />} />
         {/* Other routes added in later phases. */}
       </Routes>
 

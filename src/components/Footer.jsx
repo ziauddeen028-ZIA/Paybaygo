@@ -37,17 +37,17 @@ export default function Footer() {
                             <li><a href="#" className="transition hover:text-white">PayBayGo Park</a></li>
                             <li><a href="#" className="transition hover:text-white">PayBayGo Pass</a></li>
                             <li><a href="#" className="transition hover:text-white">PayBayGo Fleet</a></li>
-                            <li><a href="#" className="transition hover:text-white">PayBayGo Vault</a></li>
+                            <li><a href="#" className="transition hover:text-white">PayBayGo Valet</a></li>
                         </ul>
                     </div>
 
                     <div>
                         <h3 className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-400">Policies</h3>
                         <ul className="mt-6 space-y-3 text-sm text-slate-300">
-                            <li><a href="#" className="transition hover:text-white">Privacy Policy</a></li>
-                            <li><a href="#" className="transition hover:text-white">Terms & Conditions</a></li>
-                            <li><a href="#" className="transition hover:text-white">Refund Policy</a></li>
-                            <li><a href="#" className="transition hover:text-white">Shipping & Delivery Policy</a></li>
+                            <li><a href="/privacy-policy" className="transition hover:text-white">Privacy Policy</a></li>
+                            <li><a href="/terms-and-conditions" className="transition hover:text-white">Terms & Conditions</a></li>
+                            <li><a href="/payment-policy" className="transition hover:text-white">Payment Policy</a></li>
+                            <li><a href="/parking-space-cancellation-policy" className="transition hover:text-white">Parking Space Cancellation Policy</a></li>
                         </ul>
                     </div>
 
