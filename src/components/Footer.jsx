@@ -7,6 +7,8 @@ import {
     AiOutlineX,
 } from "react-icons/ai";
 import logo from "../assets/LOGO.png";
+import play from "../assets/playstore.png";
+import ios from "../assets/ios.png";
 
 export default function Footer() {
     return (

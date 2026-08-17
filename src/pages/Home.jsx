@@ -24,6 +24,8 @@ import Vision from "./Vision";
 import ProductSection from "../components/ProductSection";
 import HowItWorks from "../components/HowItWorks";
 import logo from "../assets/LOGO.png";
+import play from "../assets/playstore.png";
+import ios from "../assets/ios.png";
 
 const initialContactState = {
   name: "",
@@ -345,7 +347,7 @@ export default function Home() {
                     <div>
                       <p className="text-sm uppercase tracking-[0.24em] text-slate-400">Address</p>
                       <p className="mt-1 max-w-xs text-base leading-7 text-slate-200">
-                        47, Kumarga Krupa Towers, 2nd Cross, 1st Block, Dr Kumars Layout, Nagayanapalya, Maruthisevanagar, Bangalore – 560033
+                        47, Kumara Krupa Towers, 2nd Cross, 1st Block, Dr Kumars Layout, Nagayanapalya, Maruthisevanagar, Bangalore – 560033
                       </p>
                     </div>
                   </div>
@@ -520,63 +522,37 @@ export default function Home() {
         <div className="page-container border-t border-white/10 py-8 text-white">
           <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-400">Download the PayBayGo App</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-400">
+                Download the PayBayGo App
+              </p>
+
               <div className="mt-4 flex flex-wrap items-center gap-3">
+                {/* Google Play */}
                 <a
                   href="https://play.google.com/store/apps/details?id=com.rimsolutions.paybaygo"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-2xl border border-slate-700 bg-slate-900 px-4 py-3 text-sm font-semibold text-white transition hover:border-[#4169E1] hover:bg-slate-800"
+                  className="inline-block transition-transform hover:scale-105"
                 >
-                  <AiOutlineGoogle className="h-5 w-5 text-[#4169E1]" />
-                  Google Play
+                  <img
+                    src={play}
+                    alt="Get it on Google Play"
+                    className="h-12 w-auto"
+                  />
                 </a>
+
+                {/* App Store */}
                 <button
                   type="button"
                   disabled
-                  className="inline-flex items-center gap-2 rounded-2xl border border-slate-700 bg-slate-900/70 px-4 py-3 text-sm font-semibold text-slate-400"
+                  className="inline-block cursor-not-allowed opacity-60"
                 >
-                  <AiOutlineApple className="h-5 w-5" />
-                  App Store
+                  <img
+                    src={ios}
+                    alt="Download on the App Store"
+                    className="h-12 w-auto"
+                  />
                 </button>
-              </div>
-            </div>
-
-            <div className="max-w-xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-400">Follow Us</p>
-              <div className="mt-4 flex flex-wrap items-center gap-3">
-                <a
-                  href="https://www.instagram.com/paybaygo/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex h-10 w-10 items-center justify-center rounded-2xl border border-slate-700 bg-slate-900 text-slate-200 transition hover:border-[#4169E1] hover:bg-slate-800 hover:text-white"
-                >
-                  <AiOutlineInstagram className="h-5 w-5" />
-                </a>
-                <a
-                  href="https://x.com/paybaygo"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex h-10 w-10 items-center justify-center rounded-2xl border border-slate-700 bg-slate-900 text-slate-200 transition hover:border-[#4169E1] hover:bg-slate-800 hover:text-white"
-                >
-                  <AiOutlineX className="h-5 w-5" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/paybaygo/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex h-10 w-10 items-center justify-center rounded-2xl border border-slate-700 bg-slate-900 text-slate-200 transition hover:border-[#4169E1] hover:bg-slate-800 hover:text-white"
-                >
-                  <AiOutlineLinkedin className="h-5 w-5" />
-                </a>
-                <a
-                  href="https://www.facebook.com/share/19MieWAtZX/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex h-10 w-10 items-center justify-center rounded-2xl border border-slate-700 bg-slate-900 text-slate-200 transition hover:border-[#4169E1] hover:bg-slate-800 hover:text-white"
-                >
-                  <AiOutlineFacebook className="h-5 w-5" />
-                </a>
               </div>
             </div>
           </div>
